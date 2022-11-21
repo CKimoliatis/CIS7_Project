@@ -61,6 +61,7 @@ int chooseLanguage(vector<string> language){
     }while(languageChoice > 9 || languageChoice < 1);
     return languageChoice;
 }
+
 int chooseSpecialty(vector<string> specialty){
     int specialization;
     do{
