@@ -37,8 +37,7 @@ int main(){
     srand(time(0));
     int n = rand() % 5;
     
-    cout << "The chosen country you are assigned to is: " << countries[languageChoice-1][n]; 
-    cout << ", where you will be practicing " << specialty[specialization-1] << "."<< endl << endl;  
+    cout << "The chosen country you are assigned to is: " << countries[languageChoice-1][n] << endl << endl;  
 
     cout << "The probabilty of a physician choosing a language is 1/9." << endl;
     cout << "The probabilty of a physician getting assigned a country is 1/5 in the chosen language. " << endl;
