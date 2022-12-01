@@ -9,7 +9,7 @@ int chooseLanguage(vector<string>);
 int chooseSpecialty(vector<string>);
 
 int main(){
-    vector<vector<string>> countries {
+    vector<vector<string>> countries { //45 countries
         {"USA", "Canada", "Australia", "Britain", "Singapore"}, //English
         {"Taiwan", "China", "Singapore", "Malaysia", "Hong Kong"}, //Chinese
         {"Spain", "Mexico", "Argentina", "Chile", "Columbia"}, //Spanish
@@ -24,7 +24,7 @@ int main(){
     vector<string> language{"English", "Chinese", "Spanish", "Arabic", "French", "German", "Russian", "Swahili", "Portugese"};
     int languageChoice = chooseLanguage(language);
    
-    vector<string> specialty{
+    vector<string> specialty{ //8 specialties
         "Cardiology", "Infectiuos Desease", "Intensive Care Medicine", 
         "Public Health", "Vascular Surgery", "Allergy and Immunology",
         "Emergency Medicine", "General Surgery"
@@ -38,11 +38,16 @@ int main(){
     int n = rand() % 5;
     
     cout << "The chosen country you are assigned to is: " << countries[languageChoice-1][n] << endl << endl;  
+    //total of 360 outcomes possible
 
-    cout << "The probabilty of a physician choosing a language is 1/9." << endl;
-    cout << "The probabilty of a physician getting assigned a country is 1/5 in the chosen language. " << endl;
-    cout << "The probability of a physician choosing a specific medical specialization is 1/8." << endl;
-    cout << "There is a 1/360 chance of a physician matching with the specified language, and specialization." << endl;
+    int numberOfLanguage = language.size();
+    int numberOfCountries = countries[languageChoice-1].size();
+    int numberOfSpecialties = specialty.size();
+
+    cout << "Total possible outcomes are " << numberOfCountries*numberOfLanguage*numberOfSpecialties << endl;
+    cout << "The probabilty of matching countries are 1/" <<  numberOfCountries*numberOfLanguage << endl;
+    cout << "The probabilty of matching specialties are 1/" << numberOfSpecialties << endl;
+    cout << "The probabilty of matching based on country, specialty, and language preference is 1/" << numberOfCountries*numberOfLanguage*numberOfSpecialties << endl;
     
     return 0;
 }
