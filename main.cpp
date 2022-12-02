@@ -35,7 +35,7 @@ int main(){
     cout << "You have chosen " << language[languageChoice-1] << " as your language and " << specialty[specialization-1] << " as your medical specialty." << endl;
 
     srand(time(0));
-    int n = rand() % 5;
+    int n = rand() % countries[languageChoice-1].size();
     
     cout << "The chosen country you are assigned to is: " << countries[languageChoice-1][n] << endl << endl;  
     //total of 360 outcomes possible
@@ -54,30 +54,32 @@ int main(){
 
 int chooseLanguage(vector<string> language){
     int languageChoice;
+    int numLanguage = language.size();
     do{
         cout << "Choose a language and a country will be assigned. "<< endl;
-        for(int i = 0; i < language.size(); i++){
+        for(int i = 0; i < numLanguage; i++){
             cout << i + 1 << ". " << language[i] << endl ;
         }
         cin >> languageChoice;
-        if(languageChoice > 9 || languageChoice < 1){
+        if(languageChoice > numLanguage || languageChoice < 1){
             cout << "You must choose a number that is associated with the language. Try again:" << endl;
         }
-    }while(languageChoice > 9 || languageChoice < 1);
+    }while(languageChoice > numLanguage || languageChoice < 1);
     return languageChoice;
 }
 
 int chooseSpecialty(vector<string> specialty){
     int specialization;
+    int numSpecialty = specialty.size();
     do{
         cout << endl << "Now choose a field you medical specialization you are in:" << endl;
-        for(int i = 0; i < specialty.size(); i++){
+        for(int i = 0; i < numSpecialty; i++){
             cout << i+1 << ". " << specialty[i] << endl;
         }
         cin >> specialization;
-        if(specialization > 8 || specialization < 1){
+        if(specialization > numSpecialty || specialization < 1){
             cout << "You must choose a number associated with the medical specialty. Try again: " << endl;
         }
-    }while(specialization > 8 || specialization < 1);
+    }while(specialization > numSpecialty || specialization < 1);
     return specialization;
 }

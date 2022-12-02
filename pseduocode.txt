@@ -1,0 +1,53 @@
+Initialize chooseLanguage function header
+Initialize chooseSpecialty funciton header
+
+Function main
+    Initialize 2 dimensional vector, countries holding the countries 
+    Initialize 1 dimensional vector, language holding all languages
+    Call chooseLanguage function and initialize returned value into an integer 
+    Initialize 1 dimensional vector, specialties holding the medical specialties
+    Call chooseSpecialty function and initialize returned value into an integer
+    Output thanks 
+    Output the chosen language and chooseSpecialty
+    Use srand(time(0)) to randomize the srand function so it randomizes different values
+    Intialize n with the a random integer with the range of countries in selected language
+    Output chosen country based on randomized integer
+    Initialize numberOfLanguage to hold the number of languages
+    Initialize numberOfCountries to hold the number of countries based on langauge chosen
+    Initialize numberOfSpecialties to hold the number of medical specialties
+
+    Output the total possible outcomes
+    Output the probability of matching countries
+    Output the probability of matching specialties
+    Output the total probability based on country, specialty, and language choice
+End main function
+
+chooseLanguage function passing in language vector
+    intialize languageChoice
+    initialize numLanguage to number of elements in language vector
+    Do
+        Output choose language to user
+        For i = 0 to number of langauges
+            Output list of langauges 
+        Input languageChoice
+        if languageChoice larger than numLanguage or smaller than 1
+            Output try again
+    Until languageChoice smaller than numLanguage or larger than 1
+    return languageChoice 
+End chooseLanguage function
+
+chooseSpecialty function passing in specialty vector
+    Intialize specialization 
+    Do
+        Output choose medical specialization to user
+        For i=0 to number of medical specialties
+            Output list of specialties
+        Input specialization
+        If specialization larger than 8 or larger than 1
+            Output try again
+    Until specialization smaller than numLanguage or larger than 1
+    return specialization
+End chooseSpecialty function
+
+
+
