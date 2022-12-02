@@ -16,5 +16,9 @@ The program will print out the probabilty of based on the countries, language, a
 * The usage of product rule in the calculation of the probability.
 ## Setup
 Pull this code or copy paste it into desired IDE or Text Editor. 
+## Authors
+* Christopher Kimoliatis
+## Publish Date
+* 12/1/2022
 
 
