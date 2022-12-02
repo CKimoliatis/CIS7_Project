@@ -4,6 +4,8 @@
 * [Instructions](#instructions)
 * [Languages and Discrete Math Used](#languages-and-discrete-math-used)
 * [Setup](#usage)
+* [Authors](#authors)
+* [Publish Date](#publish-date)
 ## General Info
 This project is to aid in the selection of countries for the Doctors Without Borders Program.
 While showing the probability of the selections. 
