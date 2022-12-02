@@ -1,9 +1,9 @@
 # Doctors Without Borders
 ## Table of Contents
-[General Info](#general-info)
-[Usage](#usage)
-[Languages and Discrete Math Used](#languages-and-discrete-math-used)
-[Setup](#usage)
+* [General Info](#general-info)
+* [Usage](#usage)
+* [Languages and Discrete Math Used](#languages-and-discrete-math-used)
+* [Setup](#usage)
 ## General Info
 This project is to aid in the selection of countries for the Doctors Without Borders Program.
 While showing the probability of the selections. 
